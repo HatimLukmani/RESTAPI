@@ -1,0 +1,113 @@
+STEP-1 Create A New Api 
+    title : RESTapi for CMS
+    Description: RESTapi Description for CMS api 
+    Contact : Hatim M. Lukmani
+    Version : 1.0
+STEP -2 Identify the type of Api
+    Public 
+STEP -3 Identify the base url of the server(Mock server)
+    https://9b64224f-fbd6-4cfd-99da-003d2f355694.mock.pstmn.io
+STEP -4 Identify the resources 
+    student 
+    course 
+STEP -5 Have the resources as plurals 
+    students("/students")
+    courses("/courses")
+STEP -6 Defining the resources modals 
+    student modals
+        -student id
+        -First name 
+        -Last name
+        -address
+    course modals
+        -course id
+        -course name
+        -course duration
+        -course type
+STEP -7 Select the identifier for ecah resources 
+    student modals
+        -student id(IDENTIFIER)
+        -First name 
+        -Last name
+        -address
+    course modals
+        -course id(IDENTIFIER)
+        -course name
+        -course duration
+        -course type
+STEP -8 Identify the association for each resources
+    courses 
+        "/courses/{courseId}/students"
+    students
+        None
+STEP -9 Check for URL complexity 
+    courses
+        "/courses"
+        "/courses/{courseId}"
+        "/courses/{courseId}/students"
+    students
+        "/students"
+        "/students/{studentId}"
+STEP -10 Identifying the methods for each resources  
+    courses
+        "/courses"
+            GET
+            POST
+        "/courses/{courseId}"
+            GET
+            PUT
+            DELETE
+        "/courses/{courseId}/students"    
+            GET
+            POST
+    students
+        "/students"
+            GET
+            POST
+        "/students/{studentId}"
+            GET
+            PUT
+            DELETE
+STEP -11 Identify the parameters required for the operations 
+    (i) Query parameters
+            None
+    (ii) Path parameters
+            Collections : None
+            Items : courseId
+    (iii)Cookies 
+            None
+    (iv)Headers
+            None
+STEP -12 Identify the content-type of request for the operations
+    application/json
+STEP -13
+
+STEP -14 Identify the HTTP status code for the resposne
+courses
+        "/courses"
+            GET
+                HTTP STATUS CODE 200 OK
+                HTTP STATUS CODE 404 NOT FOUND
+            POST
+                HTTP STATUS CODE 201 CREATED
+                HTTP STATUS CODE 400 Bad Request
+        "/courses/{courseId}"
+            GET
+                HTTP STATUS CODE 200 OK
+                HTTP STATUS CODE 404 NOT FOUND
+            PUT
+                HTTP STATUS CODE 200 OK
+                HTTP STATUS CODE 404 NOT FOUND
+            DELETE
+                HTTP STATUS CODE 204 NO CONTENT 
+                HTTP STATUS CODE 404 NOT FOUND
+        "/courses/{courseId}/students"    
+            GET
+                HTTP STATUS CODE 200 OK
+                HTTP STATUS CODE 404 NOT FOUND
+            POST
+                HTTP STATUS CODE 201 CREATED
+                HTTP STATUS CODE 400 BAD REQUEST 
+
+STEP -15 IDENTIFY THE CONTENT-TYPE OF RESPONSE FOR THE OPEARATION
+    application / json

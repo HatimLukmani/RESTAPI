@@ -1,0 +1,77 @@
+College Management System Api Documentation
+title : RESTapi for CMS
+Description: RESTapi Description for CMS api 
+Contact : Hatim M. Lukmani
+Version : 1.0
+Type: Public 
+Server Base URL:https://9b64224f-fbd6-4cfd-99da-003d2f355694.mock.pstmn.io
+
+Course 
+GET "/courses"
+Content-Type : application/json
+Request:None
+Response:
+    HTTP STATUS CODE 200 OK
+    HTTP STATUS CODE 404 NOT FOUND
+
+POST "/courses"
+Content-Type : application/json
+Request:
+    Request Body Format:
+        {
+            "course id",
+            "course name",
+            "course duration",
+            "course type",
+        }
+Response:
+    HTTP STATUS CODE 201 CREATED
+    HTTP STATUS CODE 400 Bad Request
+
+GET "/courses/{courseId}"
+Content-Type : application/json
+Request:None
+Response:
+    HTTP STATUS CODE 200 OK
+    HTTP STATUS CODE 404 NOT FOUND
+
+PUT "/courses/{courseId}" 
+Content-Type : application/json
+Request:
+    Request Body Format:
+        {
+            "course name",
+            "course duration",
+            "course type"
+        }
+Response:
+    HTTP STATUS CODE 200 OK
+    HTTP STATUS CODE 404 NOT FOUND
+
+DELETE "/courses/{courseId}" 
+Content-Type : application/json
+Request:None
+Response:
+    HTTP STATUS CODE 204 NO CONTENT
+    HTTP STATUS CODE 404 NOT FOUND
+
+GET "/courses/{courseId}/students"    
+Content-Type : application/json
+Request:
+Response:
+    HTTP STATUS CODE 200 OK
+    HTTP STATUS CODE 404 NOT FOUND
+
+POST "/courses/{courseId}/students"  
+Content-Type : application/json          
+Request:                
+     Request Body Format:
+        {
+            "student id",
+            "First name ",
+            "Last name",
+            "address"
+        }          
+Response:                
+    HTTP STATUS CODE 201 CREATED
+    HTTP STATUS CODE 400 BAD REQUEST            

@@ -1,0 +1,61 @@
+14. Introduction
+15. How HTTP Works?
+16. Parts of a HTTP Request
+17. DEMO: Parts of a HTTP Request
+18. What is REST?
+19. DEMO: API in Postman
+20. URL vs URI
+21. STEP 3: Identify the Server Base URL
+Quiz 2: ACTIVITY: Overview of RESTful APIs
+22. Summary
+23. Introduction
+24. Resources should be Nouns
+25. STEP 4: Identify the Resources
+26. Resources should be Collections
+27. STEP 5: Have the Resources as Plural
+28. STEP 6: Define the Resource Models
+29. Use Unique Identifiers
+30. STEP 7: Select the Identifier for Each Resource
+31. Non-resource Data should be Query Paramete
+Quiz 3: ACTIVITY: Designing API Resources
+32. Summary
+33. Introduction
+34. Defining Relationships between Resources
+35. STEP 8: Identify the Association for Each Resource
+36. URL Shouldn’t be Complex
+37. STEP 9: Check for the URL Complexity
+38. Combine Related Resources
+Quiz 4: ACTIVITY: Designing Associations between Resources
+39. Summary
+40. Introduction
+41. Overview of HTTP Operations
+42. Common HTTP Operations
+43. Selecting Operations based on Individual Item or Collection
+44. Idempotent Methods
+45. Differences between POST, PUT, and PATCH
+
+46. STEP 10: Identify the Operations for Each Resource
+Quiz 5: ACTIVITY: Designing API Operations
+47. Summary
+
+48. Introduction
+49. Designing Request Parameters
+50. STEP 11: Identify the Parameters Required for the Operation
+51. Designing Request Content
+52. STEP 12: Identify the Content Type of Request for the Operation
+53. STEP 13: Identify the Request Body for the Operation
+Quiz 6: ACTIVITY: Designing API Requests
+54. Summary
+55. Introduction
+56. HTTP Status Codes
+57. Designing Status Codes in Responses
+58. STEP 14: Identify the HTTP Status Codes for the Operation
+
+59. Choosing the Format of Responses
+60. STEP 15: Identify the Content Type of Response for the Operation
+61. Designing Response Body
+62. STEP 16: Identify the Response Body for the Operation
+63. Designing Error Handling
+64. STEP 17: Handle Errors for the Operation
+Quiz 7: ACTIVITY: Designing API Responses
+65. Summary
